@@ -10,6 +10,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 // Define Routes
+app.use('/api/users', require('./routes/api/users'));
 
 // Serve static assets in production
 
